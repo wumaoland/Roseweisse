@@ -1,0 +1,40 @@
+.footer-link {
+  box-sizing: border-box;
+  width: 1190px;
+  padding: 40px 45px;
+  margin: 40px auto 0;
+  border-top: 1px solid #E5E5E5;
+  border-bottom: 1px solid #E5E5E5;
+  overflow: hidden;
+
+  .el-col {
+    width: 220px;
+
+    dl {
+      margin-bottom: 20px;
+
+      dt {
+        color: #333;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 2;
+      }
+
+      dd {
+        color: #666;
+        font-size: 12px;
+        line-height: 2;
+        text-align: left;
+        cursor: pointer;
+
+        &:hover {
+          color: #fe8c00;
+        }
+      }
+
+      dd.large-size {
+        font-size: 14px;
+      }
+    }
+  }
+}

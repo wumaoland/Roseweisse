@@ -1,0 +1,364 @@
+.el-main {
+  padding: 0px;
+  overflow: visible;
+  ;
+}
+
+.clearfix::after {
+  display: block;
+  content: '';
+  clear: both;
+}
+
+.body-index-wrapper {
+  width: 1190px;
+  margin: 0 auto;
+
+  .banner-container {
+    .banner-left {
+      position: relative;
+      font-size: 13px;
+      color: #646464;
+      background: #FFF;
+      box-sizing: border-box;
+      border: 1px solid #E5E5E5;
+      margin-top: -50px;
+
+      .banner-all-categories {
+        .banner-left-title {
+          color: #222222;
+          font-size: 16px;
+          font-weight: 700;
+          margin-left: 15px;
+          margin-bottom: 10px;
+          height: 50px;
+          padding-top: 15px;
+          box-sizing: border-box;
+        }
+
+        .banner-shops-container {
+          position: relative;
+          box-sizing: border-box;
+          padding: 2px 12px;
+          height: 26px;
+
+          &:hover {
+            background: rgba(255, 150, 0, 0.08);
+            color: #000;
+            font-weight: 700;
+          }
+
+
+          .iconfont {
+            line-height: 26px;
+          }
+
+          span {
+            line-height: 26px;
+            margin-left: 11px;
+            cursor: pointer;
+          }
+
+          .el-icon-arrow-right {
+            line-height: 26px;
+            float: right;
+            color: #bfbfbf;
+          }
+        }
+      }
+
+      .banner-shops-content {
+        position: absolute;
+        top: 60px;
+        left: 247px;
+        width: 400px;
+        height: 416px;
+        background-color: #fff;
+        z-index: 199;
+        color: #666;
+        overflow: hidden;
+        box-sizing: border-box;
+        padding: 0 30px;
+
+        .shops-title {
+          margin-top: 24px;
+          overflow: hidden;
+          height: 22px;
+          line-height: 22px;
+          padding-bottom: 10px;
+          border-bottom: 1px solid #e5e5e5;
+
+          h4 {
+            font-size: 16px;
+            font-weight: 500;
+            color: #222;
+            cursor: pointer;
+            float: left;
+          }
+
+          .more {
+            font-size: 12px;
+            color: #999;
+            font-weight: 400;
+            float: right;
+            margin-right: 6px;
+            position: relative;
+            cursor: pointer;
+          }
+        }
+
+        a {
+          white-space: nowrap;
+          color: #999;
+          font-size: 12px;
+          line-height: 15px;
+          display: inline-block;
+          margin-right: 16px;
+          margin-top: 10px;
+          cursor: pointer;
+
+          &:hover {
+            color: #fe8c00;
+          }
+        }
+      }
+    }
+
+    .banner-right {
+      position: relative;
+
+      .right-title {
+        font-size: 0px;
+        position: absolute;
+        top: -30px;
+        left: 20px;
+
+        a {
+          font-size: 16px;
+          color: #222;
+          font-weight: 700;
+          margin: 0 20px;
+          cursor: pointer;
+        }
+
+        .waimai:hover,
+        .mingsu:hover {
+          color: #FDC411;
+        }
+
+        .dianying:hover,
+        .jiudian:hover,
+        .gongyi:hover {
+          color: #ed1e24;
+        }
+
+        .shangjia:hover {
+          color: #FE8C00;
+        }
+      }
+
+      .banner-row {
+        margin-left: 10px;
+        margin-top: 10px;
+        font-size: 0px;
+
+        .silder {
+          display: inline-block;
+          width: 550px;
+          margin-right: 10px;
+
+          img {
+            width: 550px;
+          }
+        }
+
+        a {
+          display: inline-block;
+        }
+
+        .pic {
+          margin-right: 10px;
+          background-repeat: no-repeat;
+          background-color: #fff;
+        }
+
+        .right-pic1 {
+          background-size: 150px;
+          background-position: 50%;
+          width: 150px;
+          height: 240px;
+          background-image: url("http://p0.meituan.net/codeman/e473bb428f070321269b23370ff02ba956209.jpg");
+        }
+
+        .right-pic2 {
+          width: 270px;
+          height: 165px;
+          background-size: 270px;
+          background-position: 50%;
+          background-image: url(http://p1.meituan.net/codeman/8cce56c467a17e04f3094d1e455462a0132772.png);
+        }
+
+        .right-pic3 {
+          width: 270px;
+          height: 165px;
+          background-size: 270px;
+          background-position: 50%;
+          background-image: url(http://p1.meituan.net/codeman/16442c19da1f1c4544f794e29d99c92051716.jpg);
+        }
+
+        .right-pic4 {
+          width: 150px;
+          height: 165px;
+          background-size: 150px;
+          background-position: 50%;
+          background-image: url(http://p1.meituan.net/codeman/5b21cddb4bb1cbc3a9c3bce0f726c75940469.jpg);
+        }
+
+        .login-container {
+          display: inline-block;
+          width: 201px;
+          height: 238px;
+          background-color: #fff;
+          border: 1px solid #e5e5e5;
+          vertical-align: top;
+
+          .head-img {
+            width: 47px;
+            height: 47px;
+            border-radius: 50%;
+            border: 4px solid #E5E5E5;
+            margin: 0 auto;
+            overflow: hidden;
+            margin-top: 30px;
+            margin-bottom: 4px;
+
+            img {
+              width: 47px;
+              height: 47px;
+            }
+          }
+
+          .user-name {
+            text-align: center;
+          }
+
+          button {
+            width: 118px;
+            display: block;
+            margin: 10px auto 15px auto;
+
+            &:hover {
+              background-color: #f6f6f6;
+              color: #333;
+              border: 1px solid #e5e5e5;
+              ;
+            }
+          }
+        }
+
+        .download-app {
+          display: inline-block;
+          width: 201px;
+          height: 165px;
+          background-color: #fff;
+          border: 1px solid #e5e5e5;
+          vertical-align: top;
+          text-align: center;
+
+          img {
+            width: 95px;
+            height: 95px;
+            margin-top: 10px;
+          }
+
+          .app-name {
+            display: block;
+            font-size: 16px;
+            color: #222222;
+            font-weight: 500;
+            margin-top: 5px;
+          }
+
+          .app-intr {
+            display: block;
+            margin-top: 5px;
+            span {
+              font-size: 12px;
+              font-weight: 500;
+            }
+            span:first-child {
+              color: #EC5330;
+              margin-right: 5px;
+            }
+          }
+        }
+      }
+
+
+    }
+  }
+}
+
+.iconkuaizishaozi::before {
+  color: #FF8200;
+}
+
+.iconwaimai::before {
+  color: #FFB500;
+}
+
+.iconjiudian::before {
+  color: #9B5E3E;
+}
+
+.iconminsu::before {
+  color: #FFB500;
+}
+
+.iconArtboard-copy::before {
+  color: #FF3D00;
+}
+
+.iconhuochepiao::before {
+  color: #03A9F4;
+}
+
+.iconKTV::before {
+  color: #00BF96;
+}
+
+.iconshenghuofuwu::before {
+  color: #00BF96;
+}
+
+.iconliren::before {
+  color: #FF4081;
+}
+
+.iconzuanshi::before {
+  color: #FF4081;
+}
+
+.iconqinzi::before {
+  color: #FF4081;
+}
+
+.iconjianshen::before {
+  color: #03A9F4;
+}
+
+.iconjiazhuang::before {
+  color: #00BF96;
+}
+
+.iconshijuanguanli::before {
+  color: #00BF96;
+}
+
+.iconyiliao::before {
+  color: #03A9F4;
+}
+
+.iconjiuba::before {
+  color: #00BF96;
+}
