@@ -82,12 +82,13 @@
           </div>
         </el-row>
       </el-col>
-      <el-col></el-col>
     </el-row>
+    <maoyan-container />
   </div>
 </template>
 
 <script>
+import maoyanContainer from './maoyanContainer'
 export default {
   data() {
     return {
@@ -577,6 +578,9 @@ export default {
     shopsLeave() {
       this.activeDD = null;
     }
+  },
+  components: {
+    maoyanContainer
   }
 };
 </script>

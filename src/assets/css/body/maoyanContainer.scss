@@ -1,0 +1,143 @@
+.maoyan-container {
+  margin-top: 40px;
+  position: relative;
+
+  .title {
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    height: 44px;
+    line-height: 44px;
+    background: rgb(250, 60, 104) linear-gradient(to right, rgb(250, 60, 104) 2%, rgb(254, 70, 77) 97%) repeat scroll 0% 0%;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: #fff;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+
+    .title-left {
+      dt {
+        display: inline-block;
+        margin-right: 20px;
+        font-family: "MFShangHei-Regular" !important;
+        font-size: 18px;
+        text-transform: uppercase;
+        cursor: pointer;
+      }
+
+      dd {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+        bottom: 0px;
+
+        i {
+          position: absolute;
+          left: 21px;
+          bottom: 0px;
+        }
+      }
+    }
+
+    .title-right {
+      cursor: pointer;
+    }
+  }
+
+  .content {
+    overflow: hidden;
+    position: relative;
+
+    &:hover {
+
+      .left-icon,
+      .right-icon {
+        opacity: 1;
+      }
+    }
+
+    .silder {
+      white-space: nowrap;
+      margin: 2px 12px;
+      width: 2350px;
+      transition: transform .5s;
+
+      .each-film {
+        display: inline-block;
+        width: 214px;
+        height: 297px;
+        border-radius: 4px;
+        margin-right: 19px;
+        overflow: hidden;
+
+        img {
+          width: 100%;
+        }
+
+        .film-info {
+          height: 100px;
+          width: 214px;
+          transform: translateY(-100px);
+          border-bottom-left-radius: 4px;
+          border-bottom-right-radius: 4px;
+          background-image: linear-gradient(-180deg, rgba(0, 0, 0, 0.00) 0%, rgba(29, 45, 55, 0.80) 99%);
+          display: table-cell;
+          vertical-align: bottom;
+          color: #fff;
+          box-sizing: border-box;
+          padding-left: 10px;
+          padding-bottom: 12px;
+
+          .want-watch {
+            font-size: 12px;
+            font-weight: 500;
+
+            .hot {
+              font-size: 16px;
+              color: #FD9827;
+              font-weight: 500;
+            }
+          }
+
+          .name {
+            margin-top: 5px;
+          }
+        }
+      }
+    }
+
+    .to-left {
+      transform: translateX(1140px);
+    }
+
+    .to-right {
+      transform: translateX(-1140px);
+    }
+
+    .left-icon,
+    .right-icon {
+      opacity: 0;
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      background-color: #333;
+      color: #fff;
+      font-size: 20px;
+      line-height: 38px;
+      text-align: center;
+      cursor: pointer;
+      position: absolute;
+      transition: opacity .5s;
+      top: 50%;
+    }
+
+    .left-icon {
+      transform: translateY(-50%);
+    }
+
+    .right-icon {
+      right: 0;
+      transform: translateY(-50%);
+    }
+  }
+}
