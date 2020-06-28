@@ -33,3 +33,7 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
   `npm i element-ui -S`
   - style-loader、css-loader、sass-loader、node-sass（解析sass文件）
   `npm install style-loader css-loader sass-loader node-sass -D`
+# 更新日志（1.0）
+- 完成切换城市页面
+- 完成登录页面
+- 实现路由导航以及Vuex

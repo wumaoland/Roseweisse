@@ -11,7 +11,7 @@
       ]
     </div>
     <div class="header-register">
-      <router-link class="log" to="">立即登录</router-link>
+      <router-link class="log" to="login">立即登录</router-link>
       <router-link class="register" to="">注册</router-link>
     </div>
   </el-col>

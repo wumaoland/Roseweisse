@@ -1,0 +1,104 @@
+.choose-container {
+  display: inline-block;
+
+  .input {
+    padding: 10px 0 10px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    vertical-align: middle;
+    display: inline-block;
+    width: 150px;
+    height: 40px;
+    box-sizing: border-box;
+    border: 1px solid #E5E5E5;
+    margin-right: 10px;
+    position: relative;
+    font-size: 14px;
+    color: #666;
+    line-height: 18px;
+
+    i {
+      position: absolute;
+      right: 10px;
+    }
+
+  }
+
+  .content {
+    z-index: 1000;
+    position: absolute;
+    cursor: default;
+    top: 45px;
+    left: 100px;
+    // width: 264px;
+    height: 375px;
+    padding: 20px 0 20px 15px;
+    box-sizing: border-box;
+    background-color: #fff;
+    border: 1px solid #E5E5E5;
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.10);
+    border-radius: 4px;
+
+    .content-title {
+      font-size: 16px;
+      color: #CCC;
+      margin-bottom: 11px;
+    }
+
+    .content-details {
+      // overflow: hidden;
+
+      .cao {
+        float: left;
+      }
+
+      span {
+        // display: block;
+        white-space: nowrap;
+        cursor: pointer;
+        font-size: 12px;
+        color: #666;
+        display: table;
+        box-sizing: border-box;
+        min-width: 40px;
+        height: 20px;
+        padding: 1px 8px;
+        margin: 6px 38px 6px 0;
+        line-height: 18px;
+
+        &:hover {
+          border-radius: 10px;
+          background: #F4F4F4;
+        }
+      }
+
+      span.active {
+        background: linear-gradient(to bottom right, #FFD000, #FFBD00);
+        border-radius: 10px;
+        color: #222222;
+      }
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: -5px;
+      left: 26px;
+      border-left: 6px solid transparent;
+      border-right: 6px solid transparent;
+      border-bottom: 6px solid #fff;
+      border-top: 0;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -7px;
+      left: 26px;
+      border-left: 6px solid transparent;
+      border-right: 6px solid transparent;
+      border-bottom: 6px solid #E5E5E5;
+      border-top: 0;
+    }
+  }
+}

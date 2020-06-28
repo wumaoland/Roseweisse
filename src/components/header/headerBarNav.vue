@@ -2,19 +2,19 @@
   <el-col class="header-bar-nav" :span="8">
     <ul class="header-nav-ul">
       <li class="has-child">
-        <router-link to>我的美团</router-link>
+        <router-link to="blank">我的美团</router-link>
         <ul class="header-nav-my">
           <li>
-            <router-link to>我的订单</router-link>
+            <router-link to="blank">我的订单</router-link>
           </li>
           <li>
-            <router-link to>我的收藏</router-link>
+            <router-link to="blank">我的收藏</router-link>
           </li>
           <li>
-            <router-link to>抵用券</router-link>
+            <router-link to="blank">抵用券</router-link>
           </li>
           <li>
-            <router-link to>账户设置</router-link>
+            <router-link to="blank">账户设置</router-link>
           </li>
         </ul>
       </li>
